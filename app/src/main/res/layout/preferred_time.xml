@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/any_time_checkbox"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="   Any Time"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/morning_checkbox"
+        android:layout_alignStart="@+id/morning_checkbox" />
+
+    <CheckBox
+        android:id="@+id/morning_checkbox"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="   Morning"
+        android:layout_below="@+id/any_time_checkbox"
+        android:layout_alignLeft="@+id/afternoon_checkbox"
+        android:layout_alignStart="@+id/afternoon_checkbox" />
+
+    <CheckBox
+        android:id="@+id/afternoon_checkbox"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="   Afternoon"
+        android:layout_below="@+id/morning_checkbox"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/evening_checkbox"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="   Evening"
+        android:layout_below="@+id/afternoon_checkbox"
+        android:layout_alignLeft="@+id/afternoon_checkbox"
+        android:layout_alignStart="@+id/afternoon_checkbox" />
+</RelativeLayout>
